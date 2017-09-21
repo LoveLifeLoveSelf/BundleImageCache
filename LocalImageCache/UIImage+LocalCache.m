@@ -36,6 +36,8 @@
 {
     if (![imageName hasSuffix:@"jpg"] && ![imageName hasSuffix:@"png"] && ![imageName hasSuffix:@"gif"]) {return NO;}
     return YES;
+    
+    
 }
 
 @end
