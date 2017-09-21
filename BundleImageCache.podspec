@@ -53,7 +53,7 @@ Pod::Spec.new do |s|
   #  profile URL.
   #
 
-  s.author             = { "双木雨" => "email@address.com" }
+  s.author             = { "双木雨" => "565916940@qq.com" }
   # Or just: s.author    = "双木雨"
   # s.authors            = { "双木雨" => "email@address.com" }
   # s.social_media_url   = "http://twitter.com/双木雨"
@@ -117,7 +117,7 @@ Pod::Spec.new do |s|
   #  the lib prefix of their name.
   #
 
-  s.framework  = "UIKit"
+  s.ios.framework  = 'UIKit'
   # s.frameworks = "SomeFramework", "AnotherFramework"
 
   # s.library   = "iconv"
