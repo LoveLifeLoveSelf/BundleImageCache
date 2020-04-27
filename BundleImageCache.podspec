@@ -16,7 +16,7 @@ Pod::Spec.new do |s|
   #
 
   s.name         = "BundleImageCache"
-  s.version      = "2.0.1"
+  s.version      = "2.0.2"
   s.summary      = "bundle image used cache"
 
   # This description is used to generate tags and improve search results.
@@ -80,7 +80,7 @@ Pod::Spec.new do |s|
   #  Supports git, hg, bzr, svn and HTTP.
   #
 
-  s.source       = { :git => "https://github.com/LoveLifeLoveSelf/BundleImageCache.git", :tag => "2.0.1" }
+  s.source       = { :git => "https://github.com/LoveLifeLoveSelf/BundleImageCache.git", :tag => s.version.to_s }
 
 
   # ――― Source Code ―――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――― #
@@ -92,8 +92,8 @@ Pod::Spec.new do |s|
   #
 
   #s.source_files  = "LocalImageCache/*.{h,m}"
-  s.source_files = "LocalImageCache/*.{h}"
-  s.public_header_files = "LocalImageCache/*.{h}"
+  #s.source_files = "LocalImageCache/*.{h}"
+  #s.public_header_files = "LocalImageCache/*.{h}"
   s.ios.vendored_framework   = 'BundleImageCacheBinary/ios/BundleImageCache.framework'
   # s.exclude_files = "Classes/Exclude"
 
