@@ -91,10 +91,12 @@ Pod::Spec.new do |s|
   #  Not including the public_header_files will make all headers public.
   #
 
-  #s.source_files  = "LocalImageCache/*.{h,m}"
-  #s.source_files = "LocalImageCache/*.{h}"
-  #s.public_header_files = "LocalImageCache/*.{h}"
-  s.ios.vendored_framework   = 'BundleImageCacheBinary/ios/BundleImageCache.framework'
+  if ENV['IS_SOURCE']
+    s.source_files  = "LocalImageCache/*.{h,m}"
+  else
+    s.ios.vendored_framework   = 'BundleImageCacheBinary/ios/BundleImageCache.framework'
+  end
+  
   # s.exclude_files = "Classes/Exclude"
 
   # s.public_header_files = "Classes/**/*.h"
