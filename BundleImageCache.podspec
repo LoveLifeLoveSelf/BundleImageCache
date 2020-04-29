@@ -79,8 +79,10 @@ Pod::Spec.new do |s|
   #  Specify the location from where the source should be retrieved.
   #  Supports git, hg, bzr, svn and HTTP.
   #
-
-  s.source       = { :git => "https://github.com/LoveLifeLoveSelf/BundleImageCache.git", :tag => s.version.to_s }
+  if ENV['IS_SOURCE']
+      s.source       = { :git => "https://github.com/LoveLifeLoveSelf/BundleImageCache.git", :tag => s.version.to_s }
+  else
+      s.source       = { :git => "https://github.com/LoveLifeLoveSelf/ImageCacheBanary.git", :tag => s.version.to_s }
 
 
   # ――― Source Code ―――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――― #
