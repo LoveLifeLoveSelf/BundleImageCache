@@ -16,7 +16,7 @@ Pod::Spec.new do |s|
   #
 
   s.name         = "BundleImageCache"
-  s.version      = "2.0.4"
+  s.version      = "2.0.5"
   s.summary      = "bundle image used cache"
 
   # This description is used to generate tags and improve search results.
@@ -83,7 +83,7 @@ Pod::Spec.new do |s|
       s.source       = { :git => "https://github.com/LoveLifeLoveSelf/BundleImageCache.git", :tag => s.version.to_s }
   else
       s.source       = { :git => "https://github.com/LoveLifeLoveSelf/ImageCacheBanary.git", :tag => s.version.to_s }
-
+  end
 
   # ――― Source Code ―――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――― #
   #
