@@ -16,7 +16,7 @@ Pod::Spec.new do |s|
   #
 
   s.name         = "BundleImageCache"
-  s.version      = "2.0.5"
+  s.version      = "2.0.6"
   s.summary      = "bundle image used cache"
 
   # This description is used to generate tags and improve search results.
@@ -115,7 +115,7 @@ Pod::Spec.new do |s|
   # s.resource  = "icon.png"
   # s.resources = "Resources/*.png"
 
-  # s.preserve_paths = "FilesToSave", "MoreFilesToSave"
+  s.preserve_paths = "LocalImageCache/*.{h,m}", 'BundleImageCacheBinary/ios/BundleImageCache.framework'
 
 
   # ――― Project Linking ―――――――――――――――――――――――――――――――――――――――――――――――――――――――――― #
