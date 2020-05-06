@@ -89,11 +89,12 @@ Pod::Spec.new do |s|
   #  Not including the public_header_files will make all headers public.
   #
 
-  if ENV['IS_SOURCE']
-    s.source_files  = "LocalImageCache/*.{h,m}"
-  else
-    s.ios.vendored_framework   = 'BundleImageCacheBinary/ios/BundleImageCache.framework'
-  end
+  # if ENV['IS_SOURCE']
+  #   s.source_files  = "LocalImageCache/*.{h,m}"
+  # else
+  #   s.ios.vendored_framework   = 'BundleImageCacheBinary/ios/BundleImageCache.framework'
+  # end
+  s.source_files  = "LocalImageCache/*.{h,m}"
   
   # s.exclude_files = "Classes/Exclude"
 
@@ -111,7 +112,7 @@ Pod::Spec.new do |s|
   # s.resource  = "icon.png"
   # s.resources = "Resources/*.png"
 
-  s.preserve_paths = "LocalImageCache/*.{h,m}", 'BundleImageCacheBinary/ios/BundleImageCache.framework'
+  # s.preserve_paths = "LocalImageCache/*.{h,m}", 'BundleImageCacheBinary/ios/BundleImageCache.framework'
 
 
   # ――― Project Linking ―――――――――――――――――――――――――――――――――――――――――――――――――――――――――― #
